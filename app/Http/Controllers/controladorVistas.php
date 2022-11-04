@@ -17,6 +17,7 @@ class controladorVistas extends Controller
     return view('registro');
 }
     public function Libro(validadorLibro $req){
-    return redirect('registro')->with('confirmacion','Libro registrado');
+        $titulo=$req->input('txtTitulo');
+    return redirect()->route('r')->with('confirmacion',compact('titulo'));
 }
 }
