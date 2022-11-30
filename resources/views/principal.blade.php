@@ -4,7 +4,7 @@
 <hr size="1px" style="color: rgb(77, 64, 54)" />
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-8">
+    <div class="col-5">
       <div id="carouselinfo" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
