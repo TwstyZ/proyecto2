@@ -16,7 +16,7 @@
 <div class="container col-11">
     <h1 class="text center mb-5">Ingresar Datos del Cliente</h1>
     <div class="container">
-        <form method="POST" action="{{route('c')}}">
+        <form method="POST" action="{{route('clientes.store')}}">
             @csrf
             <div class="row">
                 <div class="col-3">

@@ -35,8 +35,8 @@
             Clientes
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Registro de Clientes</a></li>
-            <li><a class="dropdown-item" href="#">Clientes</a></li>
+            <li><a class="dropdown-item" href="{{route('clientes.create')}}">Registro de Clientes</a></li>
+            <li><a class="dropdown-item" href="{{route('clientes.index')}}">Clientes</a></li>
           </ul>
         </div> 
       </div>

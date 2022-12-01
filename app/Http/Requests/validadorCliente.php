@@ -30,4 +30,3 @@ class validadorCliente extends FormRequest
         ];
     }
 }
-$txtTitulo=$_POST["txtTitulo"];

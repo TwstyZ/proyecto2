@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('tb_clientes', function (Blueprint $table) {
             $table->increments('idCliente');
             $table->string('nombre');
-            $table->string('email cliente');
+            $table->string('email_cliente');
             $table->biginteger('ine');
             $table->timestamps();
         });
