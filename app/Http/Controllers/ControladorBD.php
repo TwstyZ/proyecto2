@@ -44,7 +44,7 @@ class ControladorBD extends Controller
             "autor"=>$request->input('txtAutor'),
             "paginas"=>$request->input('txtPaginas'),
             "editorial"=>$request->input('txtEditorial'),
-            "email de editorial"=>$request->input('txtEmail'),
+            "email_de_editorial"=>$request->input('txtEmail'),
             "created_at"=>Carbon::now(),
             "updated_at"=>Carbon::now(),
         ]);
@@ -80,9 +80,19 @@ class ControladorBD extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(validadorLibro $request, $id)
     {
-        //
+        DB::table('tb_libreria')->where('idLibro',$id)->update([
+            "ISBN"=>$request->input('txtISBN'),
+            "titulo"=>$request->input('txtTitulo'),
+            "autor"=>$request->input('txtAutor'),
+            "paginas"=>$request->input('txtPaginas'),
+            "editorial"=>$request->input('txtEditorial'),
+            "email_de_editorial"=>$request->input('txtEmail'),
+            "created_at"=>Carbon::now(),
+            "updated_at"=>Carbon::now(),
+        ]);
+        return redirect('libro/index')->with('confirmacion',"tu libro se editó");
     }
 
     /**

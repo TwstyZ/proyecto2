@@ -26,6 +26,8 @@ Route::post('libro/store',[ControladorBD::class,'store'])->name('libro.store');
 Route::get('libro/index',[ControladorBD::class,'index'])->name('libro.index');
 //Destroy (eliminar de datos al formulario)
 Route::delete('libro/{id}/destroy',[ControladorBD::class,'destroy'])->name('libro.destroy');
+//Update (eliminar de datos al formulario)
+Route::put('libro/{id}/update',[ControladorBD::class,'update'])->name('libro.update');
 
 Route:: controller(controladorVistas::class)->group(
     function(){
